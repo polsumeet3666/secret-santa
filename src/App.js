@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
+import "./App.css";
+import CustomSelect from "./components/CustomSelect";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Container>
+			<Row>
+				<Col md={4} />
+				<Col md={4}>
+					<h2>Secret Santa</h2>
+				</Col>
+				<Col md={4} />
+			</Row>
+
+			<CustomSelect />
+		</Container>
+	);
 }
 
 export default App;
